@@ -11,8 +11,8 @@ import SwiftUI
 struct ContentView: View {
     let startPosition = MapCameraPosition.region(
         MKCoordinateRegion(
-            center: CLLocationCoordinate2D(latitude: 41, longitude: 28),
-            span: MKCoordinateSpan(latitudeDelta: 50, longitudeDelta: 50)
+            center: CLLocationCoordinate2D(latitude: 40.352213275759134, longitude: 28.949234944844534),
+            span: MKCoordinateSpan(latitudeDelta: 0.9, longitudeDelta: 0.9)
         )
     )
     
@@ -42,7 +42,7 @@ struct ContentView: View {
                                 Image(systemName: "star.circle")
                                     .resizable()
                                     .foregroundStyle(.red)
-                                    .frame(width: 44, height: 44)
+                                    .frame(width: 34, height: 34)
                                     .background(.white)
                                     .clipShape(.circle)
                                     .onLongPressGesture {

@@ -40,6 +40,7 @@ extension ContentView {
         
         func addLocation(at point: CLLocationCoordinate2D) {
             let newLocation = Location(id: UUID(), name: "New location", description: "", latitude: point.latitude, longitude: point.longitude)
+            print(newLocation)
             locations.append(newLocation)
             save()
         }
